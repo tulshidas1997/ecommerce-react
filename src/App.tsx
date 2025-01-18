@@ -5,7 +5,8 @@ import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import Checkout from './pages/Checkout';
 import UserAccount from './pages/UserAccount';
-import Cart from './components/Cart/Cart';
+import Cart from './pages/Cart';
+import ProductListing from './pages/ProductListing';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/checkout" component={Checkout} />
         <Route path="/account" component={UserAccount} />
         <Route path="/cart" component={Cart} />
+        <Route path="/list" component={ProductListing} />
       </Switch>
     </Router>
   );
